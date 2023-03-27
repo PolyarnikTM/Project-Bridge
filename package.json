@@ -1,11 +1,7 @@
 {
-<<<<<<< HEAD
   
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.2",
-=======
-  "dependencies": {
->>>>>>> c0c64088133de475e618f4cc0f4e84463b0de0de
     "ethers": "^6.2.2"
   }
 }
