@@ -5,6 +5,7 @@
     <title>Bridge-erc20</title>
   </head>
   <body>
+    <script src="./env.js"></script>
 
     <button class="getBalanceOf">getBalanceOf</button>
     <script src="./Token/getBalanceOf.js" type="module"></script>
@@ -24,6 +25,54 @@
       <button type="submit">Отправить</button>
     </form>
 
+    <!-- <form>
+      <label for="text-input2">Введите адрес контракта для перевода на другой блокчейн:</label>
+      <input type="text" id="text-input2" name="text-input2">
+      <button type="submit" class="submit2">Отправить</button>
+    </form> -->
+
+    <form>
+      <label for="text-input">Введите адрес контракта:</label>
+      <input type="text" id="text-input" name="text-input">
+      <button type="button" id="submit-text">Отправить</button>
+    </form>
+
+    <!-- <form>
+    <label for="inputAddress">Change token:</label>
+    <input type="text" id="inputAddress" name="inputAddress">
+    <button type="button" onclick="changeAddress()">inputAddress</button>
+    </form> -->
+
+    <form id="change-form">
+      <label for="new-value">New Value:</label>
+      <input type="text" id="new-value" name="new-value">
+      <button type="submit">Submit</button>
+    </form>
+
+    <h1 id="myHeading">Hello World!</h1>
+
+    <script>
+      const state = {
+        address: 'Hello World!',
+      };
+      
+      function changeAddress() {
+        const newAddressText = 'New Heading!';
+        state.address = newAddressText;
+        const headingElement = document.getElementById('myHeading');
+        headingElement.textContent = newAddressText;
+      }
+    </script>
+
+    <script>
+      const form = document.getElementById('change-form');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const newValue = document.getElementById('new-value').value;
+        changeGlobalVariable(newValue);
+      });
+    </script>
+<!-- 0x2263e6f927AF4Dbc440c0a8DECADff3eE3A71c8C -->
     <script
       src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"
       type="text/javascript"

@@ -11,6 +11,7 @@ async function wrappedMint(to, amount, tokenAddress) {
         wrappedTokenABI,
         signer
       );
+      console.log(tokenAddress, wrappedMint, signer)
       const WrappedMint = await ERC20.mint(
         to,
         amount,

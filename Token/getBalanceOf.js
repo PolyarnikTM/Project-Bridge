@@ -18,7 +18,7 @@ async function getBalanceOf() {
     const signer = provider.getSigner();
 
     const ERC20 = new ethers.Contract(
-        "0x2263e6f927AF4Dbc440c0a8DECADff3eE3A71c8C",
+      globalAddress,
       ERC20Artifacts,
       signer
     );
