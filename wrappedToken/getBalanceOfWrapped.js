@@ -5,6 +5,7 @@ ethereumButton.addEventListener('click', () => {
 });
 
 import ERC20Artifacts from '../Token/contractAbi.json' assert { type: 'json' };
+import deploy from "./deployWrappedToken.js";
 
 
 
@@ -25,6 +26,4 @@ async function getBalanceOfWrapped() {
       await signer.getAddress()
     );
     console.log(Number(await getBalanceOf));
-    console.log(await signer.getAddress());
-
 }

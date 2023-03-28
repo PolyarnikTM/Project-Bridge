@@ -5,7 +5,7 @@ async function requestAccount() {
   await window.ethereum.request({ method: 'eth_requestAccounts' });
 }
 
-async function symbol_name() {
+async function name_symbol() {
   if (typeof window.ethereum !== 'undefined') {
     await requestAccount();
     const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -20,7 +20,7 @@ async function symbol_name() {
     console.log(getSymbol);
     const getName = await ERC20.name();
     console.log(getName);
-    return getSymbol, getName
+    return getName, getSymbol
   }
 }
-export default symbol_name
+export default name_symbol

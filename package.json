@@ -1,7 +1,27 @@
 {
-  
+  
   "dependencies": {
-    "@openzeppelin/contracts": "^4.8.2",
-    "ethers": "^6.2.2"
+  
+    
+  "@openzeppelin/contracts": "^4.8.2",
+  
+    
+  "body-parser": "^1.20.2",
+  
+    
+  "cors": "^2.8.5",
+  
+    
+  "ethers": "^6.2.2",
+  
+    
+  "express": "^4.18.2",
+  
+    
+  "pg": "^8.10.0",
+  
+    
+  "solc": "^0.8.19"
+  
   }
 }
